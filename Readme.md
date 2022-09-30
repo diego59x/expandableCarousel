@@ -5,12 +5,12 @@ This project is just a component for an implementation on your App
 
 ## To run this project
 ### Using extension of brightscript
-Set in file "launch.json" the password configured previously of your Roku Device on developer mode
-Using extension RokuCommunity.brightscript just press F5 to start searching for a roku device
-Then select one device and the project will run
+Set in file "launch.json" the password configured previously of your Roku Device on developer mode  
+Using extension RokuCommunity.brightscript just press F5 to start searching for a roku device  
+Then select one device and the project will run  
 
 ### Installing the app with zip
-Using the zip file "roku-deploy.zip" follow this steps from Roku documentation
+Using the zip file "roku-deploy.zip" follow this steps from Roku documentation  
 https://developer.roku.com/es-gt/docs/developer-program/getting-started/developer-setup.md#step-2-accessing-the-development-application-installer
 
 
