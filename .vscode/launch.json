@@ -10,7 +10,7 @@
             "name": "BrightScript Debug: Launch",
             "stopOnEntry": false,
             "host": "${promptForHost}",
-            "password": "wotdev1",
+            "password": "YOUR_PASSWORD_DEVLOPER_MODE",
             "enableDebuggerAutoRecovery": false,
             "stopDebuggerOnAppExit": false,
         }
