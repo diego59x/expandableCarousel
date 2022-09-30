@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="TargetListFocusTestScene" extends="Scene" >
+
+<script type="text/brightscript" uri="pkg:/components/targetListFocusTestScene.brs" />
+
+<children>
+
+    <Rectangle id="background" color="0x000000" width="1920" height="1080"/>
+    <Group id = "groupp" translation="[-220, 218]">
+        <TargetList id="tList" defaultTargetSetFocusIndex="1" advanceKey="right" reverseKey="left" />
+    </Group>
+    <Video id = "exampleVideo" enableUI = "false" width="861" height="441" visible="false" translation="[35,83]"/>
+    <Timer id="timerToHighDisplay" repeat="false" duration="1.5" />
+    <Timer id="timerToVideoDisplay" repeat="false" duration="1.0" />
+
+</children>
+
+</component>

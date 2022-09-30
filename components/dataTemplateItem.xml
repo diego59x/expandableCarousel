@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="dataTemplateItem" extends="ContentNode">
+
+  <interface>
+    
+    <field id="title" type="string" alwaysNotify="false" />
+    <field id="poster" type="string" alwaysNotify="false" />
+    <field id="providerLogo" type="string" alwaysNotify="false" />
+    <field id="contentItem" type="assocarray" alwaysNotify="false" />
+
+  </interface>
+
+</component>
