@@ -14,3 +14,6 @@ Using the zip file "roku-deploy.zip" inside carpet "out" follow this steps from 
 https://developer.roku.com/es-gt/docs/developer-program/getting-started/developer-setup.md#step-2-accessing-the-development-application-installer
 
 
+## Some bugs if you want to help
+When pressing fast (right or left) the carrousel hangs
+Sometimes the carousel item does not restart its width
