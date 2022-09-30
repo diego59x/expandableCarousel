@@ -27,7 +27,6 @@ end sub
 
 
 sub focusPercentChanged()
-    print "focusPercent for item "; m.top.index; m.top.currTarget; m.top.focusPercent
 
     if ( m.top.focusPercent > 0.5)
         m.focusImage.visible = true

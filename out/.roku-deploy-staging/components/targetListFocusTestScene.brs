@@ -1,24 +1,3 @@
-'
-' ------------------------------------------------------------------------------------ 
-' ¿Que es?:
-' Este componente es un carusel que aumenta el tamaño de un item mientras empuja a los demas suavemente
-' La idea de hacerlo grande es para reproducir el trailer de la pelicula sin tener que ingresar hasta el content details
-' El nodo del videoplayer esta instanciado desde aqui para poder controlarlo de mejor forma y asi evitar uno en cada template
-'
-' ------------------------------------------------------------------------------------
-' Funcionamiento:
-' Es un targetList en el cual se deben de establecer las posiciones y tamaños de los items previamente que seran mostrados en pantalla
-' Inicialmente se usa un focusedTargetSetSmall que es el estado original, tambien se asigna unfocusedTargetSet que es cuando no tenga foco
-' Estos atributos reciben un TargetSet el cual establece los tamaños y posiciones 
-'
-' ------------------------------------------------------------------------------------
-' Para aumentar el tamaño se usa el atributo animateToTargetSet sin embargo para regresar a su estado original, 
-' Se vuelve a asignar el TargetSet con focusedTargetSetSmall para que sea un movimiento suave, de lo contrario se comporta de una manera no agradable
-' Se utiliza un timer para mostrar el video asi colocamos otra imagen mientras se extienda, es mas agradable
-' Nota: para una carga mas rapida del videoplayer se pueden asignar sus valores despues del timer en onHighDisplay +
-' + asi solo hacemos visible el video cuando ya haya cargado.
-'
-
 sub init()
   m.tList = m.top.findNode("tList")
   m.video = m.top.findNode("exampleVideo")
@@ -30,14 +9,11 @@ sub init()
   unfocusedTargetSet = createObject("roSGNode", "TargetSet")
   m.focusedTargetSetSmall = createObject("roSGNode", "TargetSet")
 
-  m.tList.duration = 1 ' Duracion para cambiar de item
+  m.tList.duration = 1
   m.tList.itemComponentName = "SimpleItemComponent"
   m.tList.focusedTargetSet = [ m.focusedTargetSetSmall ]
-  ' descomentar si se quieren carouseles infinitos
-  ' m.tList.wrap = true 
+
   m.tList.showTargetRects = false 
-  ' si se pone en true se veran las sombras de donde estaran los items del carousel +
-  ' + en los targetSet hay una propiedad 'color' la cual le da el color a estas sombras 
 
   m.focusedTargetSetSmall.targetRects = [
     { x:0, y:-140, width:230, height:450 },
@@ -166,8 +142,6 @@ sub itemUnfocusedChanged()
 end sub
 
 sub itemSelectedChanged()
-  print "itemSelected changed to: "; m.tList.itemSelected
-
   contentItemSelected = m.tList.content.getChild(m.tList.itemSelected)
 end sub
 

@@ -10,7 +10,7 @@ Using extension RokuCommunity.brightscript just press F5 to start searching for 
 Then select one device and the project will run  
 
 ### Installing the app with zip
-Using the zip file "roku-deploy.zip" follow this steps from Roku documentation  
+Using the zip file "roku-deploy.zip" inside carpet "out" follow this steps from Roku documentation  
 https://developer.roku.com/es-gt/docs/developer-program/getting-started/developer-setup.md#step-2-accessing-the-development-application-installer
 
 
