@@ -1,5 +1,4 @@
 sub Main()
-    print "in showChannelSGScreen"
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
     screen.setMessagePort(m.port)
