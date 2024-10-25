@@ -1,5 +1,0 @@
-{
-    "files.exclude": {
-        "**/.roku-deploy-staging": true
-    }
-}
