@@ -1,6 +1,13 @@
 # Expandable Carousel like Netflix App on Roku Device
 This project is just a component for an implementation on your App
 
+
+
+https://github.com/user-attachments/assets/bcb06701-beb3-4ad2-bfbf-dba93a5aa5ac
+
+
+
+
 **Note: This is just a `duplicate`, it has been done for `fun` and as a `challenge`**
 
 ## To run this project
